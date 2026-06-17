@@ -4,10 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import DestinationsIndia from "./pages/DestinationsIndia";
 import DestinationsWorld from "./pages/DestinationsWorld";
-// import PackagesNational from "./pages/PackagesNational";
-// import PackagesInternational from "./pages/PackagesInternational";
-import packagesNational from ".pages/packagesNational";
-import packagesInternational from ".pages/packagesInternational";
+import packagesNational from "./pages/packagesNational";
+import packagesInternational from "./pages/packagesInternational";
 import BookingDetails from "./pages/BookingDetails";
 import Login from "./pages/Login";
 import About from "./pages/About";
@@ -24,8 +22,8 @@ export default function App() {
         <Route path="/search" element={<SearchResults />} />
         <Route path="/destinations/india" element={<DestinationsIndia />} />
         <Route path="/destinations/world" element={<DestinationsWorld />} />
-        <Route path="/packages/national" element={<PackagesNational />} />
-        <Route path="/packages/international" element={<PackagesInternational />} />
+        <Route path="/packages/national" element={<packagesNational />} />
+        <Route path="/packages/international" element={<packagesInternational />} />
         <Route path="/booking/:id" element={<BookingDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
