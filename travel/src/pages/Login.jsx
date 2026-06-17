@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Mail, Lock } from "lucide-react";
-
+import { Helmet } from "react-helmet-async";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,6 +12,9 @@ export default function Login() {
 
   return (
     <div className="booking-wrapper" style={{ maxWidth: 400 }}>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div className="booking-form">
         <h2>Login to Wanderly</h2>
         <form onSubmit={handleSubmit}>

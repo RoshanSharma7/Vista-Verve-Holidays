@@ -1,11 +1,14 @@
 import {FaClipboardList, FaPhone, FaClock, FaExternalLinkAlt, FaGlobe, FaEnvelope } from "react-icons/fa";
-
+import { Helmet } from "react-helmet-async";
 
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeCIk3ZpMKoL1ptCCJYABHB0hZdVHUxrN3UVlQVo2WOIKyX8A/viewform?usp=publish-editor";
 
 export default function Contact() {
     return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <div className="contact-hero fade-anim">
         <div className="pulse-icon">
           <FaGlobe size={26} />

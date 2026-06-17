@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../images/logo.jpg";
+import logo from "../images/logo.png";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaAt, FaPhone, FaEnvelope, FaSearch, FaBars, FaTimes, FaChevronDown, FaTimes as FaClose } from "react-icons/fa";
 
 export default function Navbar() {

@@ -3,7 +3,7 @@ import HeroSlider from "../components/HeroSlider";
 import DestinationSlider from "../components/DestinationSlider";
 import LocationMap from "../components/LocationMap";
 import { indiaDestinations, worldDestinations, destinations } from "../data/destinations";
-
+import { Helmet } from "react-helmet-async";
 function shuffle(array) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -25,6 +25,9 @@ export default function Home() {
 
   return (
     <div>
+      <Helmet>
+        <title>Vista Verve Holidays</title>
+      </Helmet>
       <HeroSlider />
 
       <section className="section">

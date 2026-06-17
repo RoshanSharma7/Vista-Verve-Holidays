@@ -3,7 +3,7 @@ import DestinationCard from "../components/DestinationCard";
 import PackageCard from "../components/PackageCard";
 import { destinations } from "../data/destinations";
 import { nationalPackages, internationalPackages } from "../data/packages";
-
+import { Helmet } from "react-helmet-async";
 const allPackages = [...nationalPackages, ...internationalPackages];
 
 export default function SearchResults() {
@@ -22,6 +22,9 @@ export default function SearchResults() {
 
   return (
     <section className="section">
+      <Helmet>
+        <title>Your Destination</title>
+      </Helmet>
       <h2>Search results for "{params.get("to")}"</h2>
 
       {!hasResults && (

@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { MapPin, Star, AlertTriangle, Phone } from "lucide-react";
 import { destinations } from "../data/destinations";
 import { nationalPackages, internationalPackages } from "../data/packages";
+import { Helmet } from "react-helmet-async";
 
 const allItems = [...destinations, ...nationalPackages, ...internationalPackages];
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfcscmnav1hbV9HaQzRt11x8yGybcz_4zko2FNjz5XdMtSV7g/viewform?usp=header";
@@ -24,6 +25,9 @@ export default function BookingDetails() {
 
   return (
     <div className="booking-wrapper">
+      <Helmet>
+        <title>Booking Details</title>
+      </Helmet>
       <div className="booking-grid">
         <div className="booking-image">
           <img src={item.img} alt={item.name} />

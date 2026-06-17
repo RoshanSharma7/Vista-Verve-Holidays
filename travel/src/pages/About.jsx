@@ -1,8 +1,11 @@
 import { FaMountain, FaEye, FaBullseye, FaMapMarkerAlt, FaSmile, FaLeaf, FaHeadset } from "react-icons/fa";
-
+import { Helmet } from "react-helmet-async";
 export default function About() {
     return (
         <div className="about-page">
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <section className="about-hero">
                 <FaMountain size={32} />
                 <h1>About Vista Verve Holidays</h1>
